@@ -100,6 +100,10 @@
   .modal-content iframe {
     width: 500px;
   }
+
+  .navbar-toggler {
+    padding: unset;
+  }
 }
 
 @media screen and (max-width: 575px) {

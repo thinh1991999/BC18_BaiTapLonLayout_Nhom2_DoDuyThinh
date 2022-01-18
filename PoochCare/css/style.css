@@ -6,6 +6,9 @@
 
 body {
   font-family: "Jost", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  transition: all 1s;
 }
 
 :root {
@@ -22,6 +25,21 @@ body {
   --bg-light: rgba(147, 107, 232, 0.05);
 }
 
+.theme--dark {
+  --primary-color: #189a46;
+  --secondary-color: #f53626;
+  --font-color: #afafaf;
+  --bg-color: #151515;
+  --heading-color: #ddd;
+  --border-color: #333;
+  --border-light: #444;
+  --nav-color: #fff;
+  --bg-light: #222;
+  --dropdown-color: #151515;
+  --iframe-filter: grayscale(100%);
+  --widget-bg: #131617;
+}
+
 .btn {
   padding: 12px 35px;
   font-size: 18px;
@@ -33,25 +51,25 @@ body {
 }
 
 .btn-primary {
-  background: var(--bg-color);
+  background: #fff;
   color: var(--primary-color);
   border: none;
 }
 
 .btn-primary:hover {
-  background: var(--bg-color);
+  background: #fff;
   color: var(--primary-color);
   border: none;
 }
 
 .btn-outline-primary {
-  color: var(--bg-color);
-  border-color: var(--bg-color);
+  color: #fff;
+  border-color: #fff;
   transition: all 0.5s;
 }
 
 .btn-outline-primary:hover {
-  background-color: var(--bg-color);
+  background-color: #fff;
   color: var(--primary-color);
 }
 
@@ -145,6 +163,12 @@ header {
   color: gray;
 }
 
+.navbar-light .navbar-toggler-icon {
+  line-height: 34px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
 .navbar-light .navbar-brand {
   color: var(--primary-color);
   font-size: 34px;
@@ -171,6 +195,11 @@ header {
   bottom: 0;
   transition: all 0.5s;
   left: 0;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: var(--primary-color);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -527,7 +556,7 @@ header {
   margin-bottom: 30px;
   font-weight: 700;
   display: inline-block;
-  background-color: var(--bg-color);
+  background-color: #fff;
   padding: 8px 20px;
   border-radius: var(--border-radius);
 }
@@ -543,6 +572,7 @@ header {
   font-size: 25px;
   line-height: 30px;
   font-weight: 600;
+  color: var(--heading-color);
 }
 
 .plans__item__price {
@@ -597,7 +627,7 @@ header {
 
 .better__bottom {
   width: 90%;
-  margin: 0 auto;
+  margin: 50px auto 0;
   position: relative;
 }
 

@@ -57,8 +57,9 @@
         class="navbar navbar-expand-lg navbar-light bg-transparent container"
       >
         <a class="navbar-brand" href=""> Pooch Care</a>
-        <div class="header__moon__icon">
-          <i class="far fa-moon"></i>
+        <div class="header__moon__icon theme-wrap">
+          <i class="far fa-moon theme-btn"></i>
+          <i class="fas fa-sun theme-btn"></i>
         </div>
         <button
           class="navbar-toggler"
@@ -94,8 +95,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
-            <li class="nav-item">
-              <i class="far fa-moon"></i>
+            <li class="nav-item theme-wrap">
+              <i class="far fa-moon theme-btn"></i>
+              <i class="fas fa-sun theme-btn"></i>
             </li>
           </ul>
         </div>
@@ -398,9 +400,9 @@
                 <div class="plans__item-wrap">
                   <div class="plans__item-top">
                     <div class="plans__item__hint"><span>save 10%</span></div>
-                    <h3 class="plans__item__title">Free Package</h3>
+                    <h3 class="plans__item__title">Standard Package</h3>
                     <h4 class="plans__item__price">
-                      <label>$</label>0<span>/month</span>
+                      <label>$</label>39<span>/month</span>
                     </h4>
                   </div>
                   <div class="plans__item-bottm">
@@ -420,9 +422,9 @@
               <div class="plans__item col-lg-4 col-md-12 col-12">
                 <div class="plans__item-wrap">
                   <div class="plans__item-top">
-                    <h3 class="plans__item__title">Free Package</h3>
+                    <h3 class="plans__item__title">Pro Package</h3>
                     <h4 class="plans__item__price">
-                      <label>$</label>0<span>/month</span>
+                      <label>$</label>89<span>/month</span>
                     </h4>
                   </div>
                   <div class="plans__item-bottm">
@@ -643,22 +645,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="modal">
-      <div class="modal__container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Z3L21x7gPzo"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div> -->
-    <!-- Button trigger modal -->
-
-    <!-- Modal -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -803,6 +789,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./js/main.js"></script>
     <script>
       $(".countUp").countUp({
         time: 3000,

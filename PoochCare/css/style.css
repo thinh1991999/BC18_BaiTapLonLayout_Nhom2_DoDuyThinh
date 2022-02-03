@@ -144,6 +144,29 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+.cd-top {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  color: var(--border-light);
+  display: none;
+}
+
+.cd-top.cd-top--is-visible {
+  display: flex;
+}
+
+.theme-wrap {
+  cursor: pointer;
+}
+
 /* Start Header */
 
 header {
@@ -573,6 +596,10 @@ header {
   line-height: 30px;
   font-weight: 600;
   color: var(--heading-color);
+}
+
+.plans__item__title--active {
+  color: #fff;
 }
 
 .plans__item__price {
